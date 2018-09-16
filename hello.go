@@ -6,10 +6,12 @@ import (
 )
 
 func main() {
-	c, err := fmt.Println("hello world")
+	const mystr = "hello world"
+	c, err := fmt.Println(mystr)
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	fmt.Println("bytes written", c)
+
 }
