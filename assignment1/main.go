@@ -12,7 +12,7 @@ func main() {
 		numbers = append(numbers, i)
 	}
 
-	for number := range numbers {
+	for _, number := range numbers {
 		if number%2 == 0 {
 			fmt.Println(number, "is even.")
 		} else {
